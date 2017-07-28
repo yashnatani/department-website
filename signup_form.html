@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <title>
+        Doee sign up
+    </title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link href="signup_form.css" rel="stylesheet">
+    
+    
+        <style>
+        /*background colr of the page */
+        body{
+             background-color: azure;
+        }
+        /*user agent */
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        /* navigation bar background color */
+        .navbar{
+            background-color: #004d4d;
+            border: none;
+        }
+        /* jumbotron */
+        .jumbotron{
+            background-color: #004d4d;
+            color: azure;
+            border: none;
+            font-size: 25px;     
+        }
+        
+        /* notification bell */
+        .logo {
+     color: #004d4d;
+            margin-left: 80px;
+             font-size: 150px;
+            
+  }
+        /* message from the hod */
+        .mess{
+            background-color:#004d4d;
+            color: azure;
+            outline: 5px ridge azure;
+         border-radius: 5px;
+            box-shadow: 10px 10px 10px 10px rgba(64,64,64,0.3);
+        }
+        
+        
+        
+
+        
+        .eve{
+            list-style: none;
+            color: azure !important;
+            background-color: #004d4d;
+padding-bottom: 30px;
+            padding-top: 10px;
+            border-radius: 5px;
+        }
+        
+        
+             
+      .eve li a{
+    color: darkgrey !important;
+}
+
+.eve li a:hover, .eve li.active a {
+    color: #f4511e !important;
+    background-color: #fff !important;
+}
+        
+
+            .evev{
+            list-style: none;
+            color: azure !important;
+            background-color: #004d4d;
+
+            border-radius: 5px;
+        }
+        
+      .evev li a{
+    color: #fff !important;
+}
+
+.evev li a:hover, .evev li.active a {
+    color: #f4511e !important;
+    background-color: #fff !important;
+}
+        /*footer list style */ 
+        
+      .foo{
+            list-style: none;
+        }
+        /*footer */
+            .footr{
+            list-style: none;
+            color: azure !important;
+            background-color: #004d4d;
+
+            border-radius: 5px;
+        }
+        
+      .footr li a{
+    color: #fff !important;
+}
+
+.footr li a:hover, .footr li.active a {
+    color: #004d4d !important;
+    background-color: azure!important;
+text-decoration: none;
+}
+      
+        
+        .foote{background-color: #333;
+        color: azure;}
+        
+/* footer */
+
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+  }
+    </style>
+</head>
+
+<body style="background-color:azure">
+    
+   <!-- navigation bar -->
+   
+<div class="row">
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <div class="col-xs-4">      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+        
+        
+      <a class="navbar-brand" href="#"><img src="Rajasthan_Technical_University_logo.png" width="35px" height="35px"/></a>
+            </div>
+
+    </div>
+     <!-- sign up -->
+      <div class="col-xs-10">
+    <div class="collapse navbar-collapse" id="myNavbar">
+         <ul class="nav navbar-nav navbar-right">
+        <li><a href="signup_form.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+             <!-- log in -->
+        <li><a href="login_form.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+             
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+          
+<!-- home -->
+        <li><a href="home.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+          
+          <!-- academics -->
+        <li><a href="academics.html"><span class="glyphicon glyphicon-book"></span>Academics</a>
+        
+        </li>
+<!-- people -->
+          
+        <li><a href="people.html"><i class="fa fa-user-circle"></i>People</a></li>
+          
+          <!-- research -->
+        <li><a href="research_and_dev.html"><i class="fa fa-edit"></i>Research</a></li>
+          
+          <!-- about us -->
+          <li><a href="aboutus.html"><i class="fa fa-map"></i>About Us</a></li>
+          
+      </ul>
+         
+     </div>
+    </div>
+  </div>
+</nav>
+  
+</div>
+    
+    <!-- jumbotron -->
+     <div class="jumbotron">
+    <div class="container-fluid text-center" style="margin-top:20px">
+    Department Of Electrical Engineering<br>Rajasthan Technical University,Kota</div>
+   </div> 
+    
+    
+    
+    <!-- form -->
+    <div class="container" >
+        <div class="featurette" id="about" >
+           
+            <div class="container" style="border-radius=10px">
+
+                <div class="row">
+                    <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3" style="background-color:#004d4d">
+                        <form role="form" style="background-color:#004d4d;border-radius:10px">
+                            
+                            <h2 style="color:azure">Sign Up</h2>
+                            
+                            <div class="row">
+                                
+                                <!-- first name -->
+                                <div class="col-xs-12 col-sm-6 col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" name="first_name" id="first_name" class="form-control input-lg" placeholder="First Name" tabindex="1">
+                                    </div>
+                                </div>
+                                
+                                <!--last name -->
+                                <div class="col-xs-12 col-sm-6 col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" name="last_name" id="last_name" class="form-control input-lg" placeholder="Last Name" tabindex="2">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- email -->
+                           
+                            <div class="form-group">
+                                <input type="email" name="email" id="email" class="form-control input-lg" placeholder="Email Address" tabindex="4">
+                            </div>
+                            
+                            <div class="row">
+                                
+                                <!-- password -->
+                                <div class="col-xs-12 col-sm-6 col-md-6">
+                                    <div class="form-group">
+                                        <input type="password" name="password" id="password" class="form-control input-lg" placeholder="Password" tabindex="5">
+                                    </div>
+                                </div>
+                                
+                                <!-- confirm password -->
+                                <div class="col-xs-12 col-sm-6 col-md-6">
+                                    <div class="form-group">
+                                        <input type="password" name="password_confirmation" id="password_confirmation" class="form-control input-lg" placeholder="Confirm Password" tabindex="6">
+                                    </div>
+                                </div>
+                            </div>
+                           
+                            
+                            <div class="row">
+                                <div class="col-xs-12 col-md-6">
+                                    <input type="submit" value="Register" class="btn btn-primary btn-block btn-lg" tabindex="7">
+                                </div>
+                                <div class="col-xs-12 col-md-6"><a href="#" class="btn btn-success btn-block btn-lg">Sign In</a></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+        </div>
+   
+            </div>
+        </div>
+                   <!-- footer links-->
+   <hr> 
+    <div class="container-fluid footr">
+        
+        
+    <div class="row text-center">
+    <div class="col-sm-3">
+        <ul class="foo">
+            <h4>ABOUT EE</h4>
+<li><a href="aboutus.html"><span class="glyphicon glyphicon-history"></span>History</a></li>
+           
+                    <li><a href="#">EE office</a></li>
+                    <li><a href="https://www.google.co.in/maps/place/Electrical+Engineering+Department/@25.1409372,75.807084,17z/data=!4m18!1m12!4m11!1m3!2m2!1d75.8211214!2d25.1431103!1m6!1m2!1s0x396f835f6465ab71:0xe488885f2f17b4e5!2sRTU+Central+Library,+Rajasthan+Technical+University,+Rawatbhata+Road,+Akelgarh,+Kota,+Rajasthan+324010!2m2!1d75.8067043!2d25.1425052!3m4!1s0x0:0x369f9b82d64459ac!8m2!3d25.1433998!4d75.8059752">How to reach us</a></li>
+                  </ul>
+      
+    </div>
+    <div class="col-sm-3"> 
+        <ul class="foo">
+                    <h4>FORMS</h4>
+        <li><a href="https://sites.google.com/site/eeducertu/student-feedback-form-for-2014-15-odd-sem">Student Feedback Form</a></li>
+                
+                <li><a href="https://sites.google.com/site/eeducertu/alumni-feedback-form">Alumni Feedback Form</a></li>
+                <li><a href="https://sites.google.com/site/eeducertu/employer-feedback-form">Employer Feedback Form</a></li>
+
+                </ul>
+    </div>
+    <div class="col-sm-3"> 
+                <ul class="foo">
+                    <h4>DOWNLOADS</h4>
+        <li><a href="timetable.html">Time table</a></li>
+                    <li><a href="assignandtut.html">Tutorials ans Assignments</a></li>
+
+                  
+                </ul>
+    </div>
+    <div class="col-sm-3">
+                  <ul class="foo">
+                  <h4>OTHER INFO</h4>
+                  <li><a href="achievements.html">Achievements</a></li>
+                  <li><a href="future_plam.html">Future Plans</a></li>
+                  <li><a href="workshop.html">Workshops and Seminars</a></li>
+               
+              </ul>
+    </div>
+  </div>
+</div>
+    
+    
+    <footer class="container-fluid foote" style="margin:0px">
+        <div class="row">
+        <div class="col-sm-4 col-md-12">
+  <p>&#9400; Rajsathan Technical University,Kota</p><br>
+            <p></p>
+            </div>
+            </div>
+</footer>
+</body>
+
+</html>
